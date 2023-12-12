@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity">
+
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="729dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#EED1ED"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/registrotv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="Registro"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/rutedit1"
+                android:layout_width="383dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registrotv"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Rut"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/nombreedit1"
+                android:layout_width="383dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rutedit1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Nombre"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/apellidoedit1"
+                android:layout_width="383dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nombreedit1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Apellido "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/emailedit1"
+                android:layout_width="383dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/apellidoedit1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:text="Correo" />
+
+            <TextView
+                android:id="@+id/passwordtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailedit"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:text="Ingrese Contraseña"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/passwordedit1"
+                android:layout_width="383dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passwordtv"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="1dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/repasswordtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passwordedit"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:text="Repetir Contraseña"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/repasswordedit"
+                android:layout_width="387dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reppasswordtv"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnEnviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/repasswordedit"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="40dp"
+                android:text="Enviar"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/repasswordedit"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Volver"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
